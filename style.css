@@ -22,7 +22,7 @@ nav {
 
 nav .logo {
 	margin-right: auto;
-	font-size: 2rem
+	font-size: 1.5rem
 }
 
 a {
@@ -58,42 +58,83 @@ img {
 	color: #B1EAB9;
 	padding: 1rem 2rem;
 }
+
 .hero {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	padding:1.75rem;
+
+}
+.landing-page-text {
+	text-align: center;
 }
 .landing-page-text h1, h2 {
 	font-size: 2.5rem;
 }
 .landing-page-text p {
-	font-size: 1.25rem;
+	font-size: 1rem;
+	margin-bottom: 1.5rem; 
+}
+.landing-page-img {
+	margin-top: 2.5rem
 }
 
 .btn {
-	width: 175px;
-	height: 45px;
 	border-radius: 10px;
-	margin-top: 10px;
 	background-color: #F7CB3F;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #333
+	padding: 10px 30px;
+	color: #333;
+	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 576px) {
+	.landing-page-text h1, h2 {
+		font-size: 2.75rem;
+	}
+	.landing-page-text p {
+		font-size: 1.25rem;
+	}
+	.btn {
+		font-size: 1.25rem
+	}
+}
+
+@media (min-width: 768px) {
 	ul li.nav-link {
 		display: inline-block;
 	}
 
-	.hamburger {
+	ul li.hamburger {
 		display: none
 	}
 
 	.hero {
-		flex-direction: row-reverse;
+		flex-direction: row;
 		justify-content: space-around;
-		align-items: center;
+	}
+	.landing-page-text {
+		text-align: left;
+	}
+	.landing-page-img {
+		margin-top: 0.5rem
+	}
+}
+
+@media (min-width: 1040px) {
+	.landing-page-text h1, h2 {
+		font-size: 3.25rem;
+		letter-spacing: 2px
+	}
+	.landing-page-text h2 {
+		margin: 20px 0px;
+	}
+	.landing-page-text p {
+		font-size: 1.5rem;
+	}
+
+	.btn {
+		font-size: 1.5rem
 	}
 }
 
