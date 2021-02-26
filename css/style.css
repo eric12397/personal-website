@@ -8,6 +8,7 @@
 
 body {
 	font-family: 'Kanit', sans-serif;
+	background-color: #202229;
 }
 
 html {
@@ -17,7 +18,11 @@ html {
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 5%;
+	padding: 10px 100px;
+	/*position: fixed;
+	width: 100%;
+	top: 0;*/
+	
 }
 
 nav .logo {
@@ -27,7 +32,7 @@ nav .logo {
 
 a {
 	text-decoration: none;
-	color: #B1EAB9;
+	color: #00EDFF;
 }
 
 ul {
@@ -54,8 +59,8 @@ svg {
 
 #main {
 	width: 100%;
-	background-color: #292E40;
-	color: #B1EAB9;
+	background-color: #202229;
+	color: #00EDFF;
 	padding: 1rem 0rem;
 }
 
@@ -63,49 +68,79 @@ svg {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding:1.75rem;
+	padding:3rem 1rem;
+	margin-top: 1rem;
 
 }
 .landing-page-text {
 	text-align: center;
 }
-.landing-page-text h1, h2 {
-	font-size: 2.5rem;
+.landing-page-text h1, 
+.landing-page-text h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem
 }
 .landing-page-text p {
 	font-size: 1rem;
-	margin-bottom: 1.5rem; 
+	margin-bottom: 2rem; 
 }
 .landing-page-img {
-	margin-top: 2.5rem
+	margin-top: 4rem
 }
 
 .btn {
 	border-radius: 10px;
-	background-color: #F7CB3F;
+	background-color: #f2f2f2;
 	padding: 10px 30px;
 	color: #333;
 	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
 
-#molecule-1, #molecule-2, #molecule-3 {
-	animation: float 6s ease-in-out infinite;
+#portfolio {
+	position: relative;
+	width: 100%;
+	color: #292E40;
+	padding: 3rem 2rem;
 }
-
-@keyframes float {
-	0% {
-		transform: translateY(0px);
-	}
-	50% {
-		transform: translateY(-20px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
+.portfolio-heading {
+	text-align: center;
+}
+.project-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+}
+.p-img {
+	text-align: center;
+}
+.p-description {
+	text-align: center;
+	width: 350px;
+}
+.p-description h1 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.p-tech h2 {
+	font-size: 1.25rem;
+	margin: 0.5rem 0rem;
+}
+.visit-btn {
+	background-color:#292E40;
+	color: #f2f2f2;
+	font-size: 1.25rem;
+	border-radius: 20px;
+	padding: 10px 30px;
+	width:  125px;
+	margin-top: 1rem;
+	text-align: center;
+	margin: 0 auto;
 }
 
 @media (min-width: 576px) {
-	.landing-page-text h1, h2 {
+	.landing-page-text h1, 
+	.landing-page-text h2 {
 		font-size: 2.75rem;
 	}
 	.landing-page-text p {
@@ -117,6 +152,23 @@ svg {
 }
 
 @media (min-width: 768px) {
+	.landing-page-text h1, 
+	.landing-page-text h2 {
+		font-size: 2.25rem;
+	}
+	.landing-page-text p {
+		font-size: 1rem;
+	}
+	.btn {
+		font-size: 1rem
+	}
+	.landing-page-text {
+		text-align: left;
+	}
+	.landing-page-img {
+		margin-top: 0rem
+	}
+
 	ul li.nav-link {
 		display: inline-block;
 	}
@@ -126,13 +178,10 @@ svg {
 	.hero {
 		flex-direction: row;
 		justify-content: space-evenly;
+		/*padding: 1.25rem 1rem;*/
+		margin-top: 1rem;
 	}
-	.landing-page-text {
-		text-align: left;
-	}
-	.landing-page-img {
-		margin-top: 0.5rem
-	}
+	
 }
 
 @media (min-width: 1040px) {
@@ -142,8 +191,9 @@ svg {
 	ul li.nav-link {
 		font-size: 1.25rem
 	}
-	.landing-page-text h1, h2 {
-		font-size: 3.25rem;
+	.landing-page-text h1, 
+	.landing-page-text h2 {
+		font-size: 2.75rem;
 		letter-spacing: 2px
 	}
 	.landing-page-text h2 {
@@ -152,16 +202,19 @@ svg {
 	.landing-page-text p {
 		font-size: 1.5rem;
 	}
-
 	.btn {
 		font-size: 1.5rem
 	}
+
+	.project-container {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.p-description {
+		text-align: left
+	}
+
+
 }
 
-#portfolio {
-	position: relative;
-	background-color: #efefef;
-	width: 100%;
-	height: 100vh;
-	color: #292E40;
-}
+
