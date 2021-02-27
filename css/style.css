@@ -32,7 +32,7 @@ nav .logo {
 
 a {
 	text-decoration: none;
-	color: #00EDFF;
+	color: #ededed /*#00EDFF*/;
 }
 
 ul {
@@ -59,8 +59,7 @@ svg {
 
 #main {
 	width: 100%;
-	background-color: #202229;
-	color: #00EDFF;
+	color: #ededed /*#00EDFF*/;
 	padding: 1rem 0rem;
 }
 
@@ -70,8 +69,8 @@ svg {
 	align-items: center;
 	padding:3rem 1rem;
 	margin-top: 1rem;
-
 }
+
 .landing-page-text {
 	text-align: center;
 }
@@ -90,52 +89,87 @@ svg {
 
 .btn {
 	border-radius: 10px;
-	background-color: #f2f2f2;
+	border: 1px solid #00EDFF; 
+	background-color: #1f2230;
 	padding: 10px 30px;
-	color: #333;
+	color:  #00EDFF;
 	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
 
 #portfolio {
 	position: relative;
 	width: 100%;
-	color: #292E40;
+	color: #ededed;
 	padding: 3rem 2rem;
 }
 .portfolio-heading {
 	text-align: center;
 }
+.portfolio-heading h1 {
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
 .project-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 5rem;
+	
+	margin-top: 3rem;
+	padding: 4rem 2rem;
+	background: #202229;
+	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
-.p-img {
+.p-img img {
 	text-align: center;
+	max-width: 100%;
+	height: auto
 }
 .p-description {
 	text-align: center;
+	position: relative;
+	padding: 2rem;
 	width: 350px;
+	
 }
+/*.p-description::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background-color: #34323d;
+}*/
 .p-description h1 {
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
+	letter-spacing: 1px
+}
+.p-tech {
+	margin-bottom: 2rem;
 }
 .p-tech h2 {
 	font-size: 1.25rem;
 	margin: 0.5rem 0rem;
+	letter-spacing: 1px
 }
 .visit-btn {
-	background-color:#292E40;
-	color: #f2f2f2;
+	background-color:#1f2230;
+	color: #00EDFF;
 	font-size: 1.25rem;
+	border: 1px solid #00EDFF; 
 	border-radius: 20px;
 	padding: 10px 30px;
 	width:  125px;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	text-align: center;
 	margin: 0 auto;
+	cursor: pointer;
+	transition: all 0.4s ease-in
+}
+.visit-btn:hover {
+	background-color: #00EDFF;
+	color: #1f2230; 
 }
 
 @media (min-width: 576px) {
@@ -209,9 +243,14 @@ svg {
 	.project-container {
 		flex-direction: row;
 		justify-content: space-evenly;
+		/*box-shadow: none;
+		background: none;*/
+
 	}
 	.p-description {
-		text-align: left
+		text-align: left;
+		/*background: linear-gradient(90deg, #34323d 50%, #1f2126 50%);
+		box-shadow: 0 2px 3px rgb(0 0 0 / 50%);*/
 	}
 
 
