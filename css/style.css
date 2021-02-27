@@ -108,6 +108,7 @@ svg {
 .portfolio-heading h1 {
 	font-size: 2rem;
 	letter-spacing: 2px;
+	color: #00EDFF;
 }
 .project-container {
 	display: flex;
@@ -143,7 +144,8 @@ svg {
 .p-description h1 {
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
-	letter-spacing: 1px
+	letter-spacing: 1px;
+	color: #00EDFF;
 }
 .p-tech {
 	margin-bottom: 2rem;
@@ -151,7 +153,8 @@ svg {
 .p-tech h2 {
 	font-size: 1.25rem;
 	margin: 0.5rem 0rem;
-	letter-spacing: 1px
+	letter-spacing: 1px;
+	color: #00EDFF;
 }
 .visit-btn {
 	background-color:#1f2230;
@@ -188,7 +191,7 @@ svg {
 @media (min-width: 768px) {
 	.landing-page-text h1, 
 	.landing-page-text h2 {
-		font-size: 2.25rem;
+		font-size: 3rem;
 	}
 	.landing-page-text p {
 		font-size: 1rem;
@@ -227,7 +230,7 @@ svg {
 	}
 	.landing-page-text h1, 
 	.landing-page-text h2 {
-		font-size: 2.75rem;
+		font-size: 3.5rem;
 		letter-spacing: 2px
 	}
 	.landing-page-text h2 {
