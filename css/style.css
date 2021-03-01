@@ -100,7 +100,7 @@ svg {
 	position: relative;
 	width: 100%;
 	color: #ededed;
-	padding: 3rem 2rem;
+	padding: 3rem 0.5rem;
 }
 .portfolio-heading {
 	text-align: center;
@@ -115,10 +115,8 @@ svg {
 	flex-direction: column;
 	align-items: center;
 	
-	margin-top: 3rem;
-	padding: 4rem 2rem;
+	margin-bottom: 8rem;
 	background: #202229;
-	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 }
 .p-img img {
 	text-align: center;
@@ -130,17 +128,9 @@ svg {
 	position: relative;
 	padding: 2rem;
 	width: 350px;
+	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
 	
 }
-/*.p-description::before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	bottom: 2px;
-	width: 50%;
-	background-color: #34323d;
-}*/
 .p-description h1 {
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
@@ -186,6 +176,9 @@ svg {
 	.btn {
 		font-size: 1.25rem
 	}
+	.p-description {
+		width: 50%;	
+	}
 }
 
 @media (min-width: 768px) {
@@ -215,7 +208,6 @@ svg {
 	.hero {
 		flex-direction: row;
 		justify-content: space-evenly;
-		/*padding: 1.25rem 1rem;*/
 		margin-top: 1rem;
 	}
 	
@@ -242,20 +234,6 @@ svg {
 	.btn {
 		font-size: 1.5rem
 	}
-
-	.project-container {
-		flex-direction: row;
-		justify-content: space-evenly;
-		/*box-shadow: none;
-		background: none;*/
-
-	}
-	.p-description {
-		text-align: left;
-		/*background: linear-gradient(90deg, #34323d 50%, #1f2126 50%);
-		box-shadow: 0 2px 3px rgb(0 0 0 / 50%);*/
-	}
-
 
 }
 
