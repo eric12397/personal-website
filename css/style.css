@@ -49,7 +49,9 @@ ul li.nav-link {
 }
 
 ul li.hamburger {
-	font-size: 1.5rem
+	font-size: 1.5rem;
+	background-color: #161b22;
+	border-radius: 20px;
 }
 
 svg {
@@ -59,7 +61,7 @@ svg {
 
 #main {
 	width: 100%;
-	color: #ededed /*#00EDFF*/;
+	color: #ededed;
 	padding: 1rem 0rem;
 }
 
@@ -94,6 +96,11 @@ svg {
 	padding: 10px 30px;
 	color:  #00EDFF;
 	box-shadow: 0 2px 3px rgb(0 0 0 / 50%);
+	transition: all 0.4s ease-in
+}
+.btn:hover {
+	background-color: #00EDFF;
+	color: #1f2230; 
 }
 
 #portfolio {
