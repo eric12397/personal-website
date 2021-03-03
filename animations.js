@@ -30,7 +30,7 @@ images.forEach(item => {
     }
   });
 
-  tl.from(item, { x: -300, opacity: 0, duration: 1 })
+  tl.from(item, { y: 100, opacity: 0, duration: 1 })
 })
 
 
@@ -43,7 +43,7 @@ descriptions.forEach(item => {
     }
   });
 
-  tl.from(item, { x: 300, opacity: 0, duration: 1 })
+  tl.from(item, { y: 100, opacity: 0, duration: 1 })
 })
 
 
