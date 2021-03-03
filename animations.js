@@ -1,7 +1,6 @@
 // landing page animations
 
-gsap.from(".logo", {duration: 1, opacity: 0, y: 10})
-gsap.from(".hamburger", {duration: 1, opacity: 0, y: 50, stagger:0.2});
+gsap.from(".logo", {duration: 1, opacity: 0, y: 50})
 gsap.from(".nav-link", {duration: 1, opacity: 0, y: 50, stagger:0.2});
 
 gsap.from(".landing-page-text h1", {duration: 1, opacity: 0, y: 45, delay: 0.2});
