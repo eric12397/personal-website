@@ -54,7 +54,6 @@ input[type="checkbox"]{
 
 .nav-wrapper {
 	position: fixed;
-
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -76,8 +75,12 @@ input[type="checkbox"]{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%)
-
 }
+
+.hide {
+	display: none ;
+}
+
 .nav-wrapper ul li {
 	/*display: inline-block;
 	padding: 0px 15px;*/
