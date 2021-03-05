@@ -17,6 +17,8 @@ gsap.from("#ring-5", {duration: 1, opacity: 0, y: 75, delay: 0.9});
 gsap.from("#molecule-1", {duration: 1, opacity: 0, y: 65, delay: 0.5});
 gsap.from("#molecule-2", {duration: 1, opacity: 0, y: 65, delay: 0.7});
 gsap.from("#molecule-3", {duration: 1, opacity: 0, y: 65, delay: 0.9});
+gsap.from("#molecule-4", {duration: 1, opacity: 0, y: 65, delay: 1  });
+gsap.from("#molecule-5", {duration: 1, opacity: 0, y: 65, delay: 1.1});
 
 // scroll triggers
 gsap.registerPlugin(ScrollTrigger);
